@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Inter:wght@100..900&family=Cinzel&family=Montserrat&family=Playball&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-script: "Great Vibes", cursive;
+  --font-sans: "Inter", sans-serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-playball: "Playball", cursive;
+
+  --color-sage: #cea0a4; /* Dusty Pink Accent */
+  --color-paper: #faf7f2;
+
+  --color-theme-50: #fbf9f9;
+  --color-theme-100: #f5ecec;
+  --color-theme-200: #eedadb;
+  --color-theme-300: #dfbfc2;
+  --color-theme-400: #cea0a4;
+  --color-theme-500: #bd8186;
+  --color-theme-600: #9d6065;
+  --color-theme-700: #824d52;
+  --color-theme-800: #6c4246;
+  --color-theme-900: #5b3a3c;
+}
+
+:root {
+  background-color: var(--color-paper);
+  color: #4D412F;
+  font-family: var(--font-montserrat);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.serif {
+  font-family: var(--font-serif);
+}
+
+.script {
+  font-family: var(--font-script);
+}
+
+.clip-path-envelope {
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+
+.clip-path-envelope-bottom {
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+/* 3D Transform Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.website-shell {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 183, 197, 0.15), transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(213, 63, 140, 0.1), transparent 40%),
+    radial-gradient(circle at 50% 20%, rgba(255, 245, 247, 0.8), transparent 50%),
+    linear-gradient(135deg, #faf7f2 0%, #ffe4e9 50%, #faf7f2 100%);
+}
+
+
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 900px;
+}
+
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage);
+  opacity: 0.3;
+  border-radius: 10px;
+}
