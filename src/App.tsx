@@ -360,7 +360,15 @@ export default function WeddingInvitation() {
                       if (introVideoRef.current) {
                         introVideoRef.current.muted = false;
                         introVideoRef.current.currentTime = 0;
-                        introVideoRef.current.play();
+                        const playPromise = introVideoRef.current.play();
+                        if (playPromise !== undefined) {
+                          playPromise.catch((error) => {
+                            console.error("Video play failed:", error);
+                            setIsOpened(true);
+                          });
+                        }
+                      } else {
+                        setIsOpened(true);
                       }
                     }}
                     className="group relative px-12 py-5 overflow-hidden rounded-full transition-all duration-500 hover:scale-105 active:scale-95"
