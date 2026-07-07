@@ -348,9 +348,9 @@ export default function WeddingInvitation() {
                   >
                     <h2 className="font-playball text-4xl md:text-6xl text-[#9d6065] mb-6 drop-shadow-2xl">The Wedding of</h2>
                     <div className="flex flex-col items-center gap-4">
-                      <span className="font-script text-4xl md:text-6xl text-[#9d6065] drop-shadow-lg text-center max-w-[90vw] leading-tight">{INVITATION.couple.brideFull}</span>
-                      <span className="font-script text-3xl md:text-5xl text-[#9d6065]/80 drop-shadow-lg">&</span>
                       <span className="font-script text-4xl md:text-6xl text-[#9d6065] drop-shadow-lg text-center max-w-[90vw] leading-tight">{INVITATION.couple.groomFull}</span>
+                      <span className="font-script text-3xl md:text-5xl text-[#9d6065]/80 drop-shadow-lg">&</span>
+                      <span className="font-script text-4xl md:text-6xl text-[#9d6065] drop-shadow-lg text-center max-w-[90vw] leading-tight">{INVITATION.couple.brideFull}</span>
                     </div>
                   </motion.div>
 
@@ -410,9 +410,9 @@ export default function WeddingInvitation() {
                     transition={{ duration: 2, delay: 1.5 }}
                     className="flex flex-col items-center gap-4"
                   >
-                    <span className="font-script text-5xl md:text-7xl text-[#9d6065] drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] text-center max-w-[90vw] leading-tight">{INVITATION.couple.brideFull}</span>
-                    <span className="font-script text-4xl md:text-6xl text-[#9d6065]/80 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">&</span>
                     <span className="font-script text-5xl md:text-7xl text-[#9d6065] drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] text-center max-w-[90vw] leading-tight">{INVITATION.couple.groomFull}</span>
+                    <span className="font-script text-4xl md:text-6xl text-[#9d6065]/80 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">&</span>
+                    <span className="font-script text-5xl md:text-7xl text-[#9d6065] drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)] text-center max-w-[90vw] leading-tight">{INVITATION.couple.brideFull}</span>
                   </motion.div>
                 </motion.div>
 
@@ -471,7 +471,7 @@ export default function WeddingInvitation() {
                   className="mt-10"
                 >
                   <h1 className="font-script text-6xl sm:text-7xl md:text-8xl text-[#9d6065] drop-shadow-md leading-none max-w-[90vw] mx-auto leading-tight">
-                    {INVITATION.couple.brideFull}
+                    {INVITATION.couple.groomFull}
                   </h1>
                   <div className="mt-6 flex items-center justify-center gap-5">
                     <div className="h-px w-14 bg-[#7c4146]/40" />
@@ -479,7 +479,7 @@ export default function WeddingInvitation() {
                     <div className="h-px w-14 bg-[#7c4146]/40" />
                   </div>
                   <h1 className="mt-6 font-script text-6xl sm:text-7xl md:text-8xl text-[#9d6065] drop-shadow-md leading-none max-w-[90vw] mx-auto leading-tight">
-                    {INVITATION.couple.groomFull}
+                    {INVITATION.couple.brideFull}
                   </h1>
 
                   <div className="mt-10 flex justify-center w-full">
@@ -606,8 +606,8 @@ export default function WeddingInvitation() {
 
                     <div className="space-y-5 mb-10">
                       <div className="flex flex-col items-center gap-2">
-                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#9d6065]/50">Bride</span>
-                        <h3 className="text-5xl md:text-7xl font-playball text-[#9d6065] leading-none">{INVITATION.couple.brideFull}</h3>
+                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#9d6065]/50">Groom</span>
+                        <h3 className="text-5xl md:text-7xl font-playball text-[#9d6065] leading-none">{INVITATION.couple.groomFull}</h3>
                       </div>
                     </div>
 
@@ -622,8 +622,8 @@ export default function WeddingInvitation() {
 
                     <div className="space-y-5 mt-10">
                       <div className="flex flex-col items-center gap-2">
-                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#9d6065]/50">Groom</span>
-                        <h3 className="text-5xl md:text-7xl font-playball text-[#9d6065] leading-none">{INVITATION.couple.groomFull}</h3>
+                        <span className="text-[9px] uppercase tracking-[0.6em] font-bold text-[#9d6065]/50">Bride</span>
+                        <h3 className="text-5xl md:text-7xl font-playball text-[#9d6065] leading-none">{INVITATION.couple.brideFull}</h3>
                       </div>
                     </div>
 
